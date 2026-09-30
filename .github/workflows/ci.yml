@@ -60,7 +60,7 @@ jobs:
     timeout-minutes: 5
     steps:
       - name: Comparar DEV_TOKEN con LOCAL_DEV_TOKEN
-        shell: pwsh
+        shell: powershell
         env:
           DEV_TOKEN: ${{ secrets.DEV_TOKEN }}
         run: |
